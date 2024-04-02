@@ -1,0 +1,20 @@
+models:
+  - name: incremental
+    columns:
+      - name: id
+        description: "Unique identifier for employee"
+        tests:
+          - unique
+      - name: work_year
+        description: "Year of employment"
+        tests:
+        - accepted_values:
+              values: ['2020', '2021','2022']
+      - name: experience_level
+        description: "Experience level of employee"
+      - name: employment_type
+        description: "Type of employment"
+      - name: job_title
+        description: "Title of the job"
+        
+      # Add other columns as needed
